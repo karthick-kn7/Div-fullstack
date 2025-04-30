@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.q{
+		justify-content:space-between;
+		align-items: center;
+		display: flex;
+		background-color:black;
+		gap: 80px;
+		color: white;
+
+		
+
+	
+}
+ul{
+	gap: 50px;
+	display: flex;
+    list-style: none;
+	
+}
+
+
+li:hover{
+	text-decoration: underline;
+	
+
+
+}
+
+
+/* .two{
+ float: right;
+
+	
+} */
+
+
