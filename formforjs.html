@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+
+   <script>
+	   function validate() {
+      let x=document.getElementById('leo').value;
+			let msg=document.getElementById('msg');
+			const r = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,}$/;
+		if(r.test(x))
+		   {
+				msg.textContent="valid";
+				msg.style.color="green";
+			 }
+			 else{
+
+				msg.textContent="invalid";
+				msg.style.color="red";
+
+			 }
+			
+		 }
+
+	 </script>
+	</head>
+
+	<body>
+		
+
+      <center>
+			E-mail:<input type="email"   id="leo" placeholder="enter your email"><br><br>
+      
+			<button onclick="return validate()">Submit</button>
+			<div id="msg"></div>
+		</center>
+
+			
+			
+		
+	</body>
+</html>
+  
+
+
+
+
+
+
+<!-- Name:<input type="text" id="name"   placeholder="enter your name"> <br><br>
+
+Ph:<input type="tel"  id="no" placeholder="enter your no"><br> <br> -->
+
+
+
+<!--  code given by chatgpt
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<script>
+		function validate() {
+			let x = document.getElementById('leo').value;
+			let msg = document.getElementById('msg');
+			const r = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+			if (r.test(x)) {
+				msg.textContent = "valid";
+				msg.style.color = "green";
+			} else {
+				msg.textContent = "invalid";
+				msg.style.color = "red";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<center>
+		Email: <input type="email" id="leo" placeholder="enter your email"><br><br>
+		<button onclick="return validate()">Submit</button>
+	</center>
+	<div id="msg"></div>
+</body>
+</html>
+-->
